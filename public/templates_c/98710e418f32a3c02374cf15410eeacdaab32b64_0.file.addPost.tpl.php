@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2023-01-28 00:38:44
+/* Smarty version 3.1.33, created on 2023-04-15 16:26:14
   from 'C:\xampp\htdocs\Projekt\app\views\addPost.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_63d46084b39452_55317497',
+  'unifunc' => 'content_643ab406bbf2d0_20318080',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '98710e418f32a3c02374cf15410eeacdaab32b64' => 
     array (
       0 => 'C:\\xampp\\htdocs\\Projekt\\app\\views\\addPost.tpl',
-      1 => 1674862723,
+      1 => 1681568176,
       2 => 'file',
     ),
   ),
@@ -20,22 +20,22 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_63d46084b39452_55317497 (Smarty_Internal_Template $_smarty_tpl) {
+function content_643ab406bbf2d0_20318080 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, true);
 ?>
 
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_4734456363d46084b2f7e8_77430691', 'content');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_600741880643ab406bb4a55_75329383', 'content');
 $_smarty_tpl->inheritance->endChild($_smarty_tpl, "templates/main.tpl");
 }
 /* {block 'content'} */
-class Block_4734456363d46084b2f7e8_77430691 extends Smarty_Internal_Block
+class Block_600741880643ab406bb4a55_75329383 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'content' => 
   array (
-    0 => 'Block_4734456363d46084b2f7e8_77430691',
+    0 => 'Block_600741880643ab406bb4a55_75329383',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -45,7 +45,9 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
               
         <div class="form-group">
     <label for="exampleFormControlInput1">Post title:</label>
-    <input type="text" name="title" class="form-control">
+    <input type="text" name="title" class="ajax form-control">
+    <div class="ajaxResult">
+    </div>
   </div>
  
   <div class="form-group">

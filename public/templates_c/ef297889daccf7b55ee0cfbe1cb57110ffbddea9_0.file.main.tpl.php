@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2023-01-28 00:56:34
+/* Smarty version 3.1.33, created on 2023-04-15 16:13:28
   from 'C:\xampp\htdocs\Projekt\app\views\templates\main.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_63d464b2eba075_28786832',
+  'unifunc' => 'content_643ab108b40731_23497416',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'ef297889daccf7b55ee0cfbe1cb57110ffbddea9' => 
     array (
       0 => 'C:\\xampp\\htdocs\\Projekt\\app\\views\\templates\\main.tpl',
-      1 => 1674863791,
+      1 => 1681567998,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_63d464b2eba075_28786832 (Smarty_Internal_Template $_smarty_tpl) {
+function content_643ab108b40731_23497416 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, false);
 ?>
@@ -33,7 +33,7 @@ $_smarty_tpl->inheritance->init($_smarty_tpl, false);
     <link href="/Projekt/public/css/style.css" rel="stylesheet">
     <link href="/Projekt/public/css/bootstrap.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+    
 </head>
 
 <body class="page">
@@ -77,7 +77,7 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
         </nav>
       </div>
       <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_32889125063d464b2eb4a71_91364563', 'content');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_1097532504643ab108b3d650_39682597', 'content');
 ?>
 
       
@@ -98,14 +98,24 @@ $_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_32889125063d464b2e
       </p>
     </footer>
     </body>
+
+    <?php echo '<script'; ?>
+
+  src="https://code.jquery.com/jquery-3.6.4.min.js"
+  integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8="
+  crossorigin="anonymous"><?php echo '</script'; ?>
+>
+    <?php echo '<script'; ?>
+ src="/Projekt/public/js/code.js"><?php echo '</script'; ?>
+>
 </html><?php }
 /* {block 'content'} */
-class Block_32889125063d464b2eb4a71_91364563 extends Smarty_Internal_Block
+class Block_1097532504643ab108b3d650_39682597 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'content' => 
   array (
-    0 => 'Block_32889125063d464b2eb4a71_91364563',
+    0 => 'Block_1097532504643ab108b3d650_39682597',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {

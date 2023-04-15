@@ -7,7 +7,7 @@
     <link href="/Projekt/public/css/style.css" rel="stylesheet">
     <link href="/Projekt/public/css/bootstrap.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+    
 </head>
 
 <body class="page">
@@ -59,4 +59,10 @@
       </p>
     </footer>
     </body>
+
+    <script
+  src="https://code.jquery.com/jquery-3.6.4.min.js"
+  integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8="
+  crossorigin="anonymous"></script>
+    <script src="/Projekt/public/js/code.js"></script>
 </html>

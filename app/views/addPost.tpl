@@ -4,7 +4,9 @@
               
         <div class="form-group">
     <label for="exampleFormControlInput1">Post title:</label>
-    <input type="text" name="title" class="form-control">
+    <input type="text" name="title" class="ajax form-control">
+    <div class="ajaxResult">
+    </div>
   </div>
  
   <div class="form-group">

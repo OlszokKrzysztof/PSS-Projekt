@@ -14,8 +14,14 @@ class CategoryCtrl extends CoreCtrl{
             $db = App::getDB();
             $categories = $db->select("categories", "*", ["id"=>$id]);
             App::getSmarty()->assign("category",$categories[0]);
-            $posts = $db->select("posts", "*", ["category_id"=>$id]);
+            $pageOffset=($_GET["page"] ?? 1) * 2 -2;
+            $search=$_GET["search"] ?? "";
+            $posts = $db->select("posts", "*", ["category_id"=>$id, "LIMIT"=>[$pageOffset,2], "title[~]"=>"%{$search}%"]);
+            $postsCounter = $db->count("posts", "*", ["category_id"=>$id, "title[~]"=>"%{$search}%"]);
             App::getSmarty()->assign("posts",$posts);
+            App::getSmarty()->assign("postsCounter",$postsCounter);
+            App::getSmarty()->assign("search",$search);
+
 
         }
                 
@@ -180,6 +186,21 @@ class CategoryCtrl extends CoreCtrl{
              header("Location: /Projekt/public/home/");  
         }
        
+    }
+
+    public function action_ajax(){
+        $db = App::getDB();
+        $input=$_POST["input"];
+        $postsCounter = $db->count("posts", "*", ["title"=>$input]);
+        if($postsCounter > 0){
+            echo json_encode([
+                "message" => "Post name already exists"
+            ]);
+        }else{
+            echo json_encode([
+                "message" => "Post name available"
+            ]);
+        }
     }
 }
 

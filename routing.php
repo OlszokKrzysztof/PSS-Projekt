@@ -3,8 +3,8 @@
 use core\App;
 use core\Utils;
 
-//App::getRouter()->setDefaultRoute('home'); #default action
-//App::getRouter()->setLoginRoute('login'); #action to forward if no permissions
+App::getRouter()->setDefaultRoute('home'); #default action
+App::getRouter()->setLoginRoute('login'); #action to forward if no permissions
 
 Utils::addRoute('form', 'LoginCtrl');
 Utils::addRoute('home', 'CategoryCtrl');
@@ -21,6 +21,8 @@ Utils::addRoute('removePost', 'CategoryCtrl');
 Utils::addRoute('removeUser', 'CategoryCtrl');
 Utils::addRoute('removeComment', 'CategoryCtrl');
 Utils::addRoute('addPost', 'CategoryCtrl');
+Utils::addRoute('ajax', 'CategoryCtrl');
+
 
 
 
